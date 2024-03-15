@@ -1,0 +1,77 @@
+
+<div class="container">
+
+
+  <h1 class="text-center text-black mt-3"> <i class="fa fa-calculator" aria-hidden="true"></i> CALCULADORA </h1>
+  <div class="row mt-3 bg-light full">
+
+    <!-- Calculadora -->
+    <div class="col-sm-6 mt-2 mb-2">
+
+      <div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+
+          </div>
+          <input type="text" class="form-control input-text" [(ngModel)]="pantallaCalculadora" aria-label="Text input">
+        </div>
+
+      </div>
+      <div class="container text-center">
+        <b>
+          <h1>
+            <input type="button" (click)="enterValue('1')" value="1">
+            <input type="button" (click)="enterValue('2')" value="2">
+            <input type="button" (click)="enterValue('3')"value="3">
+            <input type="button" (click)="enterValue('+')" value="+">
+          </h1>
+
+          <h1>
+            <input type="button" (click)="enterValue('4')" value="4">
+            <input type="button" (click)="enterValue('5')" value="5">
+            <input type="button" (click)="enterValue('6')" value="6">
+            <input type="button" (click)="enterValue('-')" value="-">
+          </h1>
+          <h1>
+            <input type="button" (click)="enterValue('7')" value="7">
+            <input type="button" (click)="enterValue('8')" value="8">
+            <input type="button" (click)="enterValue('9')" value="9">
+            <input type="button" (click)="enterValue('*')" value="*">
+          </h1>
+
+          <h1>
+            <input type="button" (click)="enterValue('0')" value="0">
+            <input type="button" (click)="enterValue('/')" value="/">
+            <input type="button" (click)="result()" value="=">
+            <input type="button" (click)="clear()" value="C">
+          </h1>
+        </b>
+      </div>
+
+    </div>
+
+    <!-- History -->
+    <div class="col-sm-6">
+
+      <div class="card bg-light text-black" id="scroll">
+        <div class="card-title mr-2"><i class="fa fa-history" aria-hidden="true"></i> Historial</div>
+        <div class="card-body scroll" data-spy="scroll" data-target="#scroll" #mostrarOperciones>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row text-center mt-2">
+    <div class="col-12">
+      <button class="btn btn-outline-danger btn-lg mb-2" style="text-align:center" (click)="limpiarHistorial()"><i class="fa fa-trash-o" aria-hidden="true"></i> Limpiar Historial</button>
+</div>
+  </div>
+
+
+
+
+</div>
+
+<router-outlet />

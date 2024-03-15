@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'LCD', sans-serif;
+    font-family: 'LCDMono2', sans-serif;
+    src: 'https://fonts.cdnfonts.com/css/lcd';
+}
+
+@font-face {
+    font-family: 'Silverball', sans-serif;
+    src: 'https://fonts.cdnfonts.com/css/silverball';
+}
+
+@font-face {
+    font-family: 'CAT DyFa', sans-serif;
+    font-family: 'CAT DyFa invers', sans-serif;
+    font-family: 'CAT DyFa Tanned', sans-serif;
+    src: 'https://fonts.cdnfonts.com/css/cat-dyfa';
+}
+
+@font-face {
+    font-family: 'Dot Matrix', sans-serif;
+    src: 'https://fonts.cdnfonts.com/css/dot-matrix';
+}
+
+
+
+.container input {
+    background-color: lightgray;
+    color: gray;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 2px;
+    font-size: xx-large;
+}
+
+.container input[type="button"]:hover {
+    color: gray;
+    font-weight: bold;
+}
+
+.full {
+    border: 10px solid rgb(153, 153, 153);
+    margin: 2px;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.container input[type="text"] {
+    color: #3c6b6f;
+    background-color: #84b8b5;
+    text-align: end;
+    vertical-align: bottom;
+    font-family: 'Dot Matrix', sans-serif;
+    font-size: 42px;
+    border-radius: 5px !important;
+    height: 100px;
+}
+
+.scroll {
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.card {
+    margin-top: 22px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black;
+}
